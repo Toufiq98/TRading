@@ -1,0 +1,874 @@
+<!DOCTYPE html>
+<html lang="en" class="scroll-smooth">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>CTG Trading - Global Trade & Services</title>
+
+    <!-- Tailwind CSS -->
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link rel="stylesheet" href="style.css" />
+
+    <!-- Google Fonts: Inter -->
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&display=swap"
+      rel="stylesheet"
+    />
+
+    <script src="https://cdn.jsdelivr.net/npm/sweetalert2@11"></script>
+
+    <!-- Lucide Icons -->
+    <script src="https://unpkg.com/lucide@latest"></script>
+  </head>
+  <body class="bg-slate-50">
+    <!-- Header & Navigation -->
+    <header id="navbar" class="fixed top-0 left-0 right-0 z-50">
+      <div class="container mx-auto px-4 sm:px-6 lg:px-8">
+        <div class="flex items-center justify-between h-20">
+          <!-- Logo -->
+          <a href="#" class="flex-shrink-0">
+            <h1 class="text-2xl font-extrabold text-slate-800 tracking-wider">
+              CTG<span class="text-green-500"> TRADING</span>
+            </h1>
+          </a>
+
+          <!-- Desktop Navigation -->
+          <nav class="hidden md:flex items-center space-x-8">
+            <a
+              href="#about"
+              class="text-slate-600 hover:text-green-500 transition duration-300 font-medium"
+              >About Us</a
+            >
+            <a
+              href="#services"
+              class="text-slate-600 hover:text-green-500 transition duration-300 font-medium"
+              >Services</a
+            >
+            <a
+              href="#achievements"
+              class="text-slate-600 hover:text-green-500 transition duration-300 font-medium"
+              >Achievements</a
+            >
+            <a
+              href="#team"
+              class="text-slate-600 hover:text-green-500 transition duration-300 font-medium"
+              >Team</a
+            >
+            <a
+              href="#blog"
+              class="text-slate-600 hover:text-green-500 transition duration-300 font-medium"
+              >Blog</a
+            >
+            <a
+              href="#contact"
+              class="bg-green-500 text-white px-5 py-2 rounded-full font-semibold hover:bg-sky-600 transition duration-300 shadow-md hover:shadow-lg transform hover:-translate-y-0.5"
+              >Contact Us</a
+            >
+          </nav>
+
+          <!-- Mobile Menu Button -->
+          <div class="md:hidden">
+            <button
+              id="mobile-menu-button"
+              class="text-slate-700 hover:text-sky-500"
+            >
+              <i data-lucide="menu" class="w-6 h-6"></i>
+            </button>
+          </div>
+        </div>
+      </div>
+      <!-- Mobile Menu -->
+      <div id="mobile-menu" class="hidden md:hidden bg-white shadow-lg">
+        <a
+          href="#about"
+          class="block py-3 px-4 text-slate-600 hover:bg-sky-50 hover:text-sky-500"
+          >About Us</a
+        >
+        <a
+          href="#services"
+          class="block py-3 px-4 text-slate-600 hover:bg-sky-50 hover:text-sky-500"
+          >Services</a
+        >
+        <a
+          href="#achievements"
+          class="block py-3 px-4 text-slate-600 hover:bg-sky-50 hover:text-sky-500"
+          >Achievements</a
+        >
+        <a
+          href="#team"
+          class="block py-3 px-4 text-slate-600 hover:bg-sky-50 hover:text-sky-500"
+          >Team</a
+        >
+        <a
+          href="#blog"
+          class="block py-3 px-4 text-slate-600 hover:bg-sky-50 hover:text-sky-500"
+          >Blog</a
+        >
+        <a
+          href="#contact"
+          class="block py-3 px-4 text-slate-600 hover:bg-sky-50 hover:text-sky-500"
+          >Contact Us</a
+        >
+      </div>
+    </header>
+
+    <main>
+      <!-- Hero Section -->
+      <section
+        id="home"
+        class="relative min-h-screen flex items-center justify-center bg-slate-100 overflow-hidden"
+      >
+        <div class="globe-background"></div>
+        <div class="relative z-10 text-center px-4">
+          <h2
+            class="hero-h2 text-4xl md:text-6xl lg:text-7xl font-extrabold text-slate-800 leading-tight"
+          >
+            Connecting Markets,
+            <br />
+            <span class="animated-gradient-text">Delivering Excellence</span>
+          </h2>
+          <p
+            class="hero-p mt-6 max-w-2xl mx-auto text-lg md:text-xl text-slate-600"
+          >
+            CTG Trading is your trusted partner for diverse global solutions,
+            from medical supplies and industrial equipment to construction and
+            virtual assistance.
+          </p>
+          <div class="hero-button mt-10">
+            <a
+              href="#services"
+              class="inline-block bg-sky-500 text-white px-8 py-4 rounded-full font-bold text-lg hover:bg-sky-600 transition duration-300 shadow-xl hover:shadow-2xl transform hover:-translate-y-1"
+            >
+              Explore Our Services
+            </a>
+          </div>
+        </div>
+      </section>
+
+      <!-- About Us Section -->
+      <section id="about" class="py-20 lg:py-32 bg-white">
+        <div class="container mx-auto px-4 sm:px-6 lg:px-8">
+          <div
+            class="grid grid-cols-1 md:grid-cols-2 gap-12 lg:gap-20 items-center"
+          >
+            <div class="reveal">
+              <img
+                src="trading.jpg"
+                alt="XPJ Trading Team"
+                class="rounded-2xl shadow-2xl w-full h-auto object-cover"
+              />
+            </div>
+            <div class="reveal">
+              <h2 class="text-3xl lg:text-4xl font-bold text-slate-800 mb-4">
+                Your Strategic Partner in Global Trade
+              </h2>
+              <p class="gradient-text font-semibold text-lg mb-6">
+                Next-Gen Trading. Real-Time Results
+              </p>
+              <p class="text-slate-600 mb-4">
+                At CTG Trading, we bridge gaps in the global market by providing
+                a comprehensive suite of services tailored to meet the dynamic
+                needs of modern industries. Our expertise in logistics,
+                sourcing, and project management ensures seamless operations for
+                our clients worldwide.
+              </p>
+              <p class="text-slate-600">
+                We are committed to building lasting relationships based on
+                trust, transparency, and a relentless pursuit of excellence. Our
+                mission is to empower your business by simplifying complexity
+                and creating new opportunities for growth.
+              </p>
+              <div class="mt-8 flex space-x-6">
+                <div class="flex items-center space-x-2 text-slate-700">
+                  <i data-lucide="globe" class="w-6 h-6 text-sky-500"></i>
+                  <span class="font-semibold">Global Reach</span>
+                </div>
+                <div class="flex items-center space-x-2 text-slate-700">
+                  <i
+                    data-lucide="shield-check"
+                    class="w-6 h-6 text-sky-500"
+                  ></i>
+                  <span class="font-semibold">Proven Quality</span>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <!-- Services Section -->
+      <section id="services" class="py-20 lg:py-32 bg-slate-50">
+        <div class="container mx-auto px-4 sm:px-6 lg:px-8">
+          <div class="text-center mb-16">
+            <h2 class="text-3xl lg:text-4xl font-bold text-slate-800 reveal">
+              Our Comprehensive Services
+            </h2>
+            <p class="mt-4 max-w-2xl mx-auto text-lg text-slate-600 reveal">
+              Diverse solutions designed to power your success across multiple
+              industries.
+            </p>
+          </div>
+          <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
+            <!-- Service Card -->
+            <div
+              class="service-card bg-white p-8 rounded-2xl shadow-lg hover:shadow-2xl transform hover:-translate-y-2 transition-all duration-300 reveal"
+            >
+              <div
+                class="service-icon bg-sky-100 text-sky-500 w-16 h-16 rounded-full flex items-center justify-center mb-6"
+              >
+                <i data-lucide="stethoscope" class="w-8 h-8"></i>
+              </div>
+              <h3 class="text-xl font-bold text-slate-800 mb-3">
+                Medical Supply
+              </h3>
+              <p class="text-slate-600">
+                Reliable sourcing and delivery of critical medical equipment and
+                supplies to meet healthcare demands.
+              </p>
+            </div>
+            <!-- Service Card -->
+            <div
+              class="service-card bg-white p-8 rounded-2xl shadow-lg hover:shadow-2xl transform hover:-translate-y-2 transition-all duration-300 reveal"
+              style="transition-delay: 100ms"
+            >
+              <div
+                class="service-icon bg-sky-100 text-sky-500 w-16 h-16 rounded-full flex items-center justify-center mb-6"
+              >
+                <i data-lucide="arrow-right-left" class="w-8 h-8"></i>
+              </div>
+              <h3 class="text-xl font-bold text-slate-800 mb-3">
+                Irregular Export/Import
+              </h3>
+              <p class="text-slate-600">
+                Expert handling of non-standard and complex international
+                shipments, ensuring compliance and efficiency.
+              </p>
+            </div>
+            <!-- Service Card -->
+            <div
+              class="service-card bg-white p-8 rounded-2xl shadow-lg hover:shadow-2xl transform hover:-translate-y-2 transition-all duration-300 reveal"
+              style="transition-delay: 200ms"
+            >
+              <div
+                class="service-icon bg-sky-100 text-sky-500 w-16 h-16 rounded-full flex items-center justify-center mb-6"
+              >
+                <i data-lucide="hard-hat" class="w-8 h-8"></i>
+              </div>
+              <h3 class="text-xl font-bold text-slate-800 mb-3">
+                Construction
+              </h3>
+              <p class="text-slate-600">
+                Supplying high-quality materials and equipment for construction
+                projects of all scales.
+              </p>
+            </div>
+            <!-- Service Card -->
+            <div
+              class="service-card bg-white p-8 rounded-2xl shadow-lg hover:shadow-2xl transform hover:-translate-y-2 transition-all duration-300 reveal"
+              style="transition-delay: 300ms"
+            >
+              <div
+                class="service-icon bg-sky-100 text-sky-500 w-16 h-16 rounded-full flex items-center justify-center mb-6"
+              >
+                <i data-lucide="anchor" class="w-8 h-8"></i>
+              </div>
+              <h3 class="text-xl font-bold text-slate-800 mb-3">
+                Marine Services
+              </h3>
+              <p class="text-slate-600">
+                Comprehensive support for the maritime industry, including
+                parts, supplies, and logistical services.
+              </p>
+            </div>
+            <!-- Service Card -->
+            <div
+              class="service-card bg-white p-8 rounded-2xl shadow-lg hover:shadow-2xl transform hover:-translate-y-2 transition-all duration-300 reveal"
+              style="transition-delay: 400ms"
+            >
+              <div
+                class="service-icon bg-sky-100 text-sky-500 w-16 h-16 rounded-full flex items-center justify-center mb-6"
+              >
+                <i data-lucide="user-cog" class="w-8 h-8"></i>
+              </div>
+              <h3 class="text-xl font-bold text-slate-800 mb-3">
+                Virtual Assistant
+              </h3>
+              <p class="text-slate-600">
+                Professional remote administrative, technical, and creative
+                assistance to streamline your business operations.
+              </p>
+            </div>
+            <!-- Service Card -->
+            <div
+              class="service-card bg-white p-8 rounded-2xl shadow-lg hover:shadow-2xl transform hover:-translate-y-2 transition-all duration-300 reveal"
+              style="transition-delay: 500ms"
+            >
+              <div
+                class="service-icon bg-sky-100 text-sky-500 w-16 h-16 rounded-full flex items-center justify-center mb-6"
+              >
+                <i data-lucide="wrench" class="w-8 h-8"></i>
+              </div>
+              <h3 class="text-xl font-bold text-slate-800 mb-3">
+                Industrial Equipment
+              </h3>
+              <p class="text-slate-600">
+                Procurement and supply of heavy machinery and industrial
+                equipment for various sectors.
+              </p>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <!-- Achievements Section -->
+      <section id="achievements" class="py-20 lg:py-32 bg-white">
+        <div class="container mx-auto px-4 sm:px-6 lg:px-8">
+          <div class="text-center mb-16">
+            <h2 class="text-3xl lg:text-4xl font-bold text-slate-800 reveal">
+              Our Success in Numbers
+            </h2>
+            <p class="mt-4 max-w-2xl mx-auto text-lg text-slate-600 reveal">
+              We're proud of our track record in delivering value and driving
+              growth for our partners.
+            </p>
+          </div>
+          <div class="grid grid-cols-1 lg:grid-cols-2 gap-16 items-center">
+            <!-- Stats Counters -->
+            <div class="grid grid-cols-2 gap-8 text-center">
+              <div class="reveal">
+                <h3
+                  class="text-4xl md:text-5xl font-extrabold gradient-text"
+                  data-target="1250"
+                >
+                  0
+                </h3>
+                <p
+                  class="mt-2 text-slate-600 font-semibold text-sm md:text-base"
+                >
+                  Businesses Covered
+                </p>
+              </div>
+              <div class="reveal" style="transition-delay: 100ms">
+                <h3
+                  class="text-4xl md:text-5xl font-extrabold gradient-text"
+                  data-target="75"
+                >
+                  0
+                </h3>
+                <p
+                  class="mt-2 text-slate-600 font-semibold text-sm md:text-base"
+                >
+                  Countries Reached
+                </p>
+              </div>
+              <div class="reveal" style="transition-delay: 200ms">
+                <h3
+                  class="text-4xl md:text-5xl font-extrabold gradient-text"
+                  data-target="37500"
+                >
+                  0
+                </h3>
+                <p
+                  class="mt-2 text-slate-600 font-semibold text-sm md:text-base"
+                >
+                  Successful Shipments
+                </p>
+              </div>
+              <div class="reveal" style="transition-delay: 300ms">
+                <h3
+                  class="text-4xl md:text-5xl font-extrabold gradient-text"
+                  data-target="99"
+                >
+                  0
+                </h3>
+                <p
+                  class="mt-2 text-slate-600 font-semibold text-sm md:text-base"
+                >
+                  Client Satisfaction (%)
+                </p>
+              </div>
+            </div>
+            <!-- Success Chart -->
+            <div class="reveal" style="transition-delay: 400ms">
+              <div
+                class="bg-slate-50 p-6 rounded-2xl shadow-xl border border-slate-100"
+              >
+                <h4 class="font-bold text-slate-800 text-xl mb-6">
+                  Year-over-Year Growth
+                </h4>
+                <div class="space-y-5">
+                  <!-- Chart Bar -->
+                  <div class="flex items-center group">
+                    <span class="w-16 text-slate-600 font-medium">2021</span>
+                    <div class="w-full bg-slate-200 rounded-full h-8">
+                      <div
+                        class="chart-bar bg-green-500 h-8 rounded-full text-right pr-3 text-white font-bold flex items-center justify-end"
+                        data-width="55%"
+                      >
+                        55%
+                      </div>
+                    </div>
+                  </div>
+                  <!-- Chart Bar -->
+                  <div class="flex items-center group">
+                    <span class="w-16 text-slate-600 font-medium">2022</span>
+                    <div class="w-full bg-slate-200 rounded-full h-8">
+                      <div
+                        class="chart-bar bg-green-500 h-8 rounded-full text-right pr-3 text-white font-bold flex items-center justify-end"
+                        data-width="70%"
+                      >
+                        70%
+                      </div>
+                    </div>
+                  </div>
+                  <!-- Chart Bar -->
+                  <div class="flex items-center group">
+                    <span class="w-16 text-slate-600 font-medium">2023</span>
+                    <div class="w-full bg-slate-200 rounded-full h-8">
+                      <div
+                        class="chart-bar bg-green-500 h-8 rounded-full text-right pr-3 text-white font-bold flex items-center justify-end"
+                        data-width="85%"
+                      >
+                        85%
+                      </div>
+                    </div>
+                  </div>
+                  <!-- Chart Bar -->
+                  <div class="flex items-center group">
+                    <span class="w-16 text-slate-600 font-medium">2024</span>
+                    <div class="w-full bg-slate-200 rounded-full h-8">
+                      <div
+                        class="chart-bar bg-green-500 h-8 rounded-full text-right pr-3 text-white font-bold flex items-center justify-end"
+                        data-width="95%"
+                      >
+                        95%
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <!-- Team Section -->
+      <section id="team" class="py-20 lg:py-32 bg-slate-50">
+        <div class="container mx-auto px-4 sm:px-6 lg:px-8">
+          <div class="text-center mb-16">
+            <h2 class="text-3xl lg:text-4xl font-bold text-slate-800 reveal">
+              Meet Our Experts
+            </h2>
+            <p class="mt-4 max-w-2xl mx-auto text-lg text-slate-600 reveal">
+              The dedicated professionals powering our global success.
+            </p>
+          </div>
+          <div
+            class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-8 lg:gap-12"
+          >
+            <!-- Team Member Card -->
+            <div class="text-center reveal">
+              <div class="relative inline-block">
+                <img
+                  src="https://placehold.co/128x128/e0f2fe/1e293b?text=JS"
+                  alt="Team member"
+                  class="mx-auto h-32 w-32 rounded-full object-cover shadow-lg"
+                />
+                <div
+                  class="absolute bottom-0 right-0 bg-sky-500 p-2 rounded-full shadow-md"
+                >
+                  <i data-lucide="linkedin" class="w-5 h-5 text-white"></i>
+                </div>
+              </div>
+              <div class="mt-6">
+                <h3 class="text-xl font-bold text-slate-800">Jane Smith</h3>
+                <p class="text-sky-500 font-semibold">CEO & Founder</p>
+                <p class="mt-3 text-slate-600 italic">
+                  "Our mission is to build bridges of commerce across the globe,
+                  driven by integrity and a commitment to our clients' success."
+                </p>
+              </div>
+            </div>
+            <!-- Team Member Card -->
+            <div class="text-center reveal" style="transition-delay: 150ms">
+              <div class="relative inline-block">
+                <img
+                  src="https://placehold.co/128x128/e0f2fe/1e293b?text=MD"
+                  alt="Team member"
+                  class="mx-auto h-32 w-32 rounded-full object-cover shadow-lg"
+                />
+                <div
+                  class="absolute bottom-0 right-0 bg-sky-500 p-2 rounded-full shadow-md"
+                >
+                  <i data-lucide="linkedin" class="w-5 h-5 text-white"></i>
+                </div>
+              </div>
+              <div class="mt-6">
+                <h3 class="text-xl font-bold text-slate-800">Michael Davis</h3>
+                <p class="text-sky-500 font-semibold">Head of Logistics</p>
+                <p class="mt-3 text-slate-600 italic">
+                  "Efficiency in motion. We tackle the toughest logistical
+                  challenges to ensure your goods arrive on time, every time."
+                </p>
+              </div>
+            </div>
+            <!-- Team Member Card -->
+            <div class="text-center reveal" style="transition-delay: 300ms">
+              <div class="relative inline-block">
+                <img
+                  src="https://placehold.co/128x128/e0f2fe/1e293b?text=CW"
+                  alt="Team member"
+                  class="mx-auto h-32 w-32 rounded-full object-cover shadow-lg"
+                />
+                <div
+                  class="absolute bottom-0 right-0 bg-sky-500 p-2 rounded-full shadow-md"
+                >
+                  <i data-lucide="linkedin" class="w-5 h-5 text-white"></i>
+                </div>
+              </div>
+              <div class="mt-6">
+                <h3 class="text-xl font-bold text-slate-800">Chloe Wilson</h3>
+                <p class="text-sky-500 font-semibold">
+                  Medical Supply Specialist
+                </p>
+                <p class="mt-3 text-slate-600 italic">
+                  "Providing quality healthcare supplies where they're needed
+                  most is more than a job—it's a responsibility we take
+                  seriously."
+                </p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <!-- Blog Section -->
+      <section id="blog" class="py-20 lg:py-32 bg-white">
+        <div class="container mx-auto px-4 sm:px-6 lg:px-8">
+          <div class="text-center mb-16">
+            <h2 class="text-3xl lg:text-4xl font-bold text-slate-800 reveal">
+              Insights from Our Team
+            </h2>
+            <p class="mt-4 max-w-2xl mx-auto text-lg text-slate-600 reveal">
+              Stay updated with the latest trends, news, and analyses in global
+              trade and industry.
+            </p>
+          </div>
+          <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
+            <!-- Blog Post Card -->
+            <div
+              class="bg-slate-50 rounded-2xl overflow-hidden shadow-lg hover:shadow-2xl transform hover:-translate-y-2 transition-all duration-300 reveal"
+            >
+              <img
+                src="https://placehold.co/600x400/0ea5e9/ffffff?text=Logistics"
+                alt="Blog post image"
+                class="w-full h-48 object-cover"
+              />
+              <div class="p-6">
+                <p class="text-sky-500 font-semibold text-sm mb-2">LOGISTICS</p>
+                <h3 class="text-xl font-bold text-slate-800 mb-3">
+                  The Future of Global Supply Chains
+                </h3>
+                <p class="text-slate-600 mb-4">
+                  Exploring how technology is reshaping the landscape of
+                  international logistics...
+                </p>
+                <a
+                  href="#"
+                  class="font-semibold text-sky-600 hover:text-sky-700"
+                  >Read More &rarr;</a
+                >
+              </div>
+            </div>
+            <!-- Blog Post Card -->
+            <div
+              class="bg-slate-50 rounded-2xl overflow-hidden shadow-lg hover:shadow-2xl transform hover:-translate-y-2 transition-all duration-300 reveal"
+              style="transition-delay: 100ms"
+            >
+              <img
+                src="https://placehold.co/600x400/10b981/ffffff?text=Healthcare"
+                alt="Blog post image"
+                class="w-full h-48 object-cover"
+              />
+              <div class="p-6">
+                <p class="text-emerald-500 font-semibold text-sm mb-2">
+                  HEALTHCARE
+                </p>
+                <h3 class="text-xl font-bold text-slate-800 mb-3">
+                  Navigating Medical Supply Regulations
+                </h3>
+                <p class="text-slate-600 mb-4">
+                  A deep dive into the complex regulatory environment for
+                  medical device imports...
+                </p>
+                <a
+                  href="#"
+                  class="font-semibold text-sky-600 hover:text-sky-700"
+                  >Read More &rarr;</a
+                >
+              </div>
+            </div>
+            <!-- Blog Post Card -->
+            <div
+              class="bg-slate-50 rounded-2xl overflow-hidden shadow-lg hover:shadow-2xl transform hover:-translate-y-2 transition-all duration-300 reveal"
+              style="transition-delay: 200ms"
+            >
+              <img
+                src="https://placehold.co/600x400/f59e0b/ffffff?text=Construction"
+                alt="Blog post image"
+                class="w-full h-48 object-cover"
+              />
+              <div class="p-6">
+                <p class="text-amber-500 font-semibold text-sm mb-2">
+                  CONSTRUCTION
+                </p>
+                <h3 class="text-xl font-bold text-slate-800 mb-3">
+                  Sustainable Materials in Modern Building
+                </h3>
+                <p class="text-slate-600 mb-4">
+                  How green materials are becoming a cost-effective and popular
+                  choice in construction...
+                </p>
+                <a
+                  href="#"
+                  class="font-semibold text-sky-600 hover:text-sky-700"
+                  >Read More &rarr;</a
+                >
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <!-- Contact Section -->
+      <section id="contact" class="py-20 lg:py-32 bg-slate-100">
+        <div class="container mx-auto px-4 sm:px-6 lg:px-8">
+          <div class="text-center mb-16">
+            <h2 class="text-3xl lg:text-4xl font-bold text-slate-800 reveal">
+              Get In Touch
+            </h2>
+            <p class="mt-4 max-w-2xl mx-auto text-lg text-slate-600 reveal">
+              We're here to help. Reach out to us with any questions or to
+              discuss your project needs.
+            </p>
+          </div>
+          <div
+            class="max-w-4xl mx-auto bg-white p-8 sm:p-12 rounded-2xl shadow-2xl reveal"
+          >
+            <form action="#" method="POST">
+              <div class="grid grid-cols-1 md:grid-cols-2 gap-6">
+                <div>
+                  <label for="name" class="font-semibold text-slate-700"
+                    >Full Name</label
+                  >
+                  <input
+                    type="text"
+                    id="name"
+                    name="name"
+                    class="mt-2 w-full px-4 py-3 rounded-lg bg-slate-100 border-transparent focus:border-sky-500 focus:bg-white focus:ring-0 transition"
+                    placeholder="Name"
+                    required
+                  />
+                </div>
+                <div>
+                  <label for="email" class="font-semibold text-slate-700"
+                    >Email Address</label
+                  >
+                  <input
+                    type="email"
+                    id="email"
+                    name="email"
+                    class="mt-2 w-full px-4 py-3 rounded-lg bg-slate-100 border-transparent focus:border-sky-500 focus:bg-white focus:ring-0 transition"
+                    placeholder="Email"
+                    required
+                  />
+                </div>
+                <div class="md:col-span-2">
+                  <label for="subject" class="font-semibold text-slate-700"
+                    >Subject</label
+                  >
+                  <input
+                    type="text"
+                    id="subject"
+                    name="subject"
+                    class="mt-2 w-full px-4 py-3 rounded-lg bg-slate-100 border-transparent focus:border-sky-500 focus:bg-white focus:ring-0 transition"
+                    placeholder=""
+                    required
+                  />
+                </div>
+                <div class="md:col-span-2">
+                  <label for="message" class="font-semibold text-slate-700"
+                    >Message</label
+                  >
+                  <textarea
+                    id="message"
+                    name="message"
+                    rows="5"
+                    class="mt-2 w-full px-4 py-3 rounded-lg bg-slate-100 border-transparent focus:border-sky-500 focus:bg-white focus:ring-0 transition"
+                    placeholder="Your message..."
+                    required
+                  ></textarea>
+                </div>
+              </div>
+              <div class="text-center mt-8">
+                <button onclick="handleSubmit()"
+                  type="button"
+                  class="bg-sky-500 text-white px-8 py-3 rounded-full font-bold text-lg hover:bg-sky-600 transition duration-300 shadow-lg hover:shadow-xl transform hover:-translate-y-0.5"
+                >
+                  Send Message
+                </button>
+                <script>
+                  function handleSubmit() {
+                    Swal.fire({
+                      title: "Message Sent!",
+                      text: "Your message has been successfully sent.",
+                      icon: "success",
+                      confirmButtonText: "OK",
+                      confirmButtonColor: "#0ea5e9", // Tailwind sky-500
+                    });
+                  }
+                </script>
+              </div>
+            </form>
+          </div>
+        </div>
+      </section>
+    </main>
+
+    <!-- Footer -->
+    <footer class="bg-slate-800 text-slate-300">
+      <div class="container mx-auto px-4 sm:px-6 lg:px-8 py-16">
+        <div class="grid grid-cols-1 md:grid-cols-4 gap-8">
+          <!-- Company Info -->
+          <div class="md:col-span-1">
+            <h3 class="text-xl font-extrabold text-white tracking-wider">
+              CTG<span class="text-sky-400"> TRADING</span>
+            </h3>
+            <p class="mt-4 text-slate-400">
+              Your trusted partner for diverse global trade and services.
+            </p>
+          </div>
+
+          <!-- Quick Links -->
+          <div>
+            <h4 class="text-white font-semibold tracking-wider">Quick Links</h4>
+            <ul class="mt-4 space-y-2">
+              <li>
+                <a href="#about" class="hover:text-sky-400 transition-colors"
+                  >About Us</a
+                >
+              </li>
+              <li>
+                <a href="#services" class="hover:text-sky-400 transition-colors"
+                  >Services</a
+                >
+              </li>
+              <li>
+                <a
+                  href="#achievements"
+                  class="hover:text-sky-400 transition-colors"
+                  >Achievements</a
+                >
+              </li>
+              <li>
+                <a href="#team" class="hover:text-sky-400 transition-colors"
+                  >Team</a
+                >
+              </li>
+              <li>
+                <a href="#blog" class="hover:text-sky-400 transition-colors"
+                  >Blog</a
+                >
+              </li>
+              <li>
+                <a href="#contact" class="hover:text-sky-400 transition-colors"
+                  >Contact</a
+                >
+              </li>
+            </ul>
+          </div>
+
+          <!-- Services -->
+          <div>
+            <h4 class="text-white font-semibold tracking-wider">Services</h4>
+            <ul class="mt-4 space-y-2 text-slate-400">
+              <li>
+                <a href="#services" class="hover:text-sky-400 transition-colors"
+                  >Medical Supply</a
+                >
+              </li>
+              <li>
+                <a href="#services" class="hover:text-sky-400 transition-colors"
+                  >Construction</a
+                >
+              </li>
+              <li>
+                <a href="#services" class="hover:text-sky-400 transition-colors"
+                  >Marine Services</a
+                >
+              </li>
+              <li>
+                <a href="#services" class="hover:text-sky-400 transition-colors"
+                  >Virtual Assistant</a
+                >
+              </li>
+            </ul>
+          </div>
+
+          <!-- Contact Info & Socials -->
+          <div>
+            <h4 class="text-white font-semibold tracking-wider">Contact Us</h4>
+            <ul class="mt-4 space-y-3 text-slate-400">
+              <li class="flex items-start space-x-3">
+                <i
+                  data-lucide="map-pin"
+                  class="w-5 h-5 mt-1 text-sky-400 flex-shrink-0"
+                ></i>
+                <span>123 Global Trade Center, World City, 45678</span>
+              </li>
+              <li class="flex items-center space-x-3">
+                <i
+                  data-lucide="mail"
+                  class="w-5 h-5 text-sky-400 flex-shrink-0"
+                ></i>
+                <a
+                  href="mailto:contact@xpjtrading.com"
+                  class="hover:text-sky-400"
+                  >contact@ctgtrading.com</a
+                >
+              </li>
+            </ul>
+            <div class="flex space-x-4 mt-6">
+              <a
+                href="#"
+                class="text-slate-400 hover:text-sky-400 transition-colors"
+                ><i data-lucide="twitter" class="w-6 h-6"></i
+              ></a>
+              <a
+                href="#"
+                class="text-slate-400 hover:text-sky-400 transition-colors"
+                ><i data-lucide="linkedin" class="w-6 h-6"></i
+              ></a>
+              <a
+                href="#"
+                class="text-slate-400 hover:text-sky-400 transition-colors"
+                ><i data-lucide="facebook" class="w-6 h-6"></i
+              ></a>
+            </div>
+          </div>
+        </div>
+        <div
+          class="mt-12 border-t border-slate-700 pt-8 text-center text-slate-500"
+        >
+          <p>
+            &copy; <span id="year"></span> CTG Trading. All Rights Reserved.
+          </p>
+        </div>
+      </div>
+    </footer>
+
+    <script src="index.js"></script>
+  </body>
+</html>
